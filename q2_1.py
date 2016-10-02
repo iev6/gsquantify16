@@ -20,7 +20,7 @@ def age(x):
 
 bond_char_data['age'] = bond_char_data.apply(age,dtype=int)
 
-# 2 is floor(mean(age))
+# 4565 is floor(mean(age))
 bond_char_data = bond_char_data.fillna('age',4565)
 
 bond_char_data = bond_char_data.remove_column('maturity')
